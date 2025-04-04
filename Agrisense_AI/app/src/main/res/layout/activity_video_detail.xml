@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:backgroundTint="#212121"
+    android:background="#F8FAFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Original Video Section (unchanged) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/thumbnailView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <!-- Improved Action Button -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/deleteButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Video"
+                android:textColor="#F44336"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_delete"
+                android:drawablePadding="8dp"
+                android:drawableTint="#F44336"
+                android:padding="16dp"
+                android:gravity="center"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Improved Analysis Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Analysis Results"
+                    android:textColor="#1A237E"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Summary Section -->
+                <TextView
+                    android:id="@+id/summaryText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Help Section -->
+                <TextView
+                    android:text="Helpful Tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/helpText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Pros Section -->
+                <TextView
+                    android:text="Positive Aspects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_check"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="#4CAF50"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/prosText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Cons Section -->
+                <TextView
+                    android:text="Areas for Improvement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_warning"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="#F44336"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/consText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Products Section -->
+                <TextView
+                    android:text="Recommended Products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_shopping"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="#2196F3"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/productsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Recommendations Section -->
+                <TextView
+                    android:text="Expert Recommendations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/ic_lightbulb"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="#FFC107"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/recommendationsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:lineSpacingMultiplier="1.2"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

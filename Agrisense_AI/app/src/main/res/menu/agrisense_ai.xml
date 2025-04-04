@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:title="Health"
+        android:icon="@drawable/scan"
+        android:id="@+id/plant_disease_detector"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="Chatbot"
+        android:icon="@drawable/chatbot"
+        android:id="@+id/chatbot"
+        app:showAsAction="ifRoom"/>
+
+    <item android:title="video"
+        android:icon="@drawable/play"
+        android:id="@+id/video"
+        app:showAsAction="ifRoom"/>
+</menu>

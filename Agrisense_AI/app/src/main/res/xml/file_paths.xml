@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<paths>
+    <!-- For files in your app-specific "Movies" directory -->
+    <external-files-path
+        name="movies"
+        path="Movies/" />
+
+    <!-- For files in your app-specific "Pictures" directory -->
+    <external-files-path
+        name="pictures"
+        path="Pictures/" />
+
+    <!-- For files in your app-specific cache directory -->
+    <cache-path
+        name="cache"
+        path="/" />
+
+    <!-- For files in your app's internal storage -->
+    <files-path
+        name="files"
+        path="/" />
+</paths>

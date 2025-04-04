@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:orientation="vertical"
+    tools:context=".chatbotFragment">
+
+    <!-- Friendly header with icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#42A5F5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/farmer"
+            app:tint="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Agrisense AI"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed" />
+    </LinearLayout>
+
+    <!-- Chat display area with rounded corners -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#E3F2FD"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/show_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="8dp"
+            android:padding="16dp"
+            android:text="👋 Hello little farmer! What would you like to know about plants and animals?"
+            android:textColor="#424242"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-light" />
+    </ScrollView>
+
+    <!-- Message input area with clear send button -->
+    <LinearLayout
+        android:id="@+id/messageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BBDEFB"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Ask me anything..."
+            android:inputType="text"
+            android:minHeight="72dp"
+            android:padding="16dp"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textColorHint="#757575" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/right"
+            android:backgroundTint="#0D47A1"
+            android:contentDescription="Send"
+
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

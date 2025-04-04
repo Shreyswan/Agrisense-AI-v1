@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Plant Disease Detector Colors (Green Theme) -->
+    <color name="plant_bg">#2E7D32</color>
+    <color name="plant_active">#FFFFFF</color>
+    <color name="plant_inactive">#B2EBF2</color>
+
+    <!-- Chatbot Colors (Blue Theme) -->
+    <color name="chatbot_bg">#2196F3</color>
+    <color name="chatbot_active">#FFFFFF</color>
+    <color name="chatbot_inactive">#B3E5FC</color>
+
+    <!-- Video Colors (Grey Theme) -->
+    <color name="video_bg">#607D8B</color>
+    <color name="video_active">#FFFFFF</color>
+    <color name="video_inactive">#CFD8DC</color>
+
+
+
+</resources>
+
+
