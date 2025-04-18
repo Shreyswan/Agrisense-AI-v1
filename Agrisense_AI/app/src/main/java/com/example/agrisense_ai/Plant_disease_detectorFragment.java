@@ -35,7 +35,7 @@ public class Plant_disease_detectorFragment extends Fragment {
     private TextView tvResult;
     private Bitmap selectedImageBitmap;
     private Socket socket;
-    private static final String SERVER_IP = "172.20.10.3";
+    private static final String SERVER_IP = "172.20.10.4";
     private static final int SERVER_PORT = 9991;
 
     public Plant_disease_detectorFragment() {

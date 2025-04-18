@@ -97,7 +97,7 @@ public class chatbotFragment extends Fragment {
         @Override
         protected Void doInBackground(Void... params) {
             try {
-                socket = new Socket("172.20.10.3", 9991);
+                socket = new Socket("172.20.10.4", 9991);
                 InputStream is = socket.getInputStream();
 
                 printWriter = new PrintWriter(socket.getOutputStream());
